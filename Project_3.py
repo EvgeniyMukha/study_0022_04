@@ -1,10 +1,10 @@
 import math
 import random
 
-def factorial(n):
-    if n == 0:
-        return 1
-    return n*factorial(n-1)
+def factorial(number): # функция факториала
+    if number == 0:
+        return 1.0
+    return number*factorial(number-1)
 
 point = True
 print("/ деление \n* умножение \n+ сложение \n- разность\nm модуль\narccos - arccos \n^  возведение в степень \n! факториал \nrand рандомное число \nquit выход")
@@ -14,7 +14,7 @@ while(point):
 
     if str == "/":
         print("number =")
-        number = float(input())
+        number = float(input())  # float - вещественные числа
         print("second number = ")
         secondnumber = float(input())
         print(number / secondnumber)

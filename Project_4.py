@@ -4,15 +4,15 @@ print("Второй овощ")
 second = input()
 print("Третий овощ")
 third = input()
-V1 = first.lower()
+V1 = first.lower() # lower - ввод слов в нижнем регистре
 V2 = second.lower()
 V3 = third.lower()
 print(V1, V2, V3)
-V1 = first.upper()
+V1 = first.upper() # upper - ввод слов в верхнем регистре
 V2 = second.upper()
 V3 = third.upper()
 print(V1, V2, V3)
-V1 = first.capitalize()
+V1 = first.capitalize() # capitalize - выводит первую бувку в верхнем регистре
 V2 = second.capitalize()
 V3 = third.capitalize()
 print(V1, V2, V3)
