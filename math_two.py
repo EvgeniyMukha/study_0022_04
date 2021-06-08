@@ -14,35 +14,35 @@ class manipulation():
         number_second = float(input())
         print(number + number_second)
 
-    def deleniye(self):
+    def division(self):
         print("number =")
         number = float(input())
         print("number_second = ")
         number_second = float(input())
         print(number / number_second)
 
-    def umnozheniye(self):
+    def multiplication(self):
         print("number =")
         number = float(input())
         print("number_second = ")
         number_second = float(input())
         print(number * number_second)
 
-    def vichetaniye(self):
+    def subtraction(self):
         print("number =")
         number = float(input())
         print("number_second = ")
         number_second = float(input())
         print(number - number_second)
 
-    def stepen(self):
+    def power(self):
         print("number =")
         number = float(input())
         print("number_second = ")
         number_second = float(input())
         print(number ** number_second)
 
-    def module(self):
+    def mod(self):
         print("number =")
         number = float(input())
         print(math.fabs(number))
