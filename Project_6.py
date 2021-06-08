@@ -55,38 +55,38 @@ print("/ деление \n* умножение \n+ сложение \n- разн
 
 while(point):
     number=0;second_number=0;str=0;
-    str = input()
+    command = input()
 
-    if str == "/":
+    if command == "/":
         deleniye(number,second_number)
 
-    elif str == "quit":
+    elif command == "quit":
         point = False
 
-    elif str == "*":
+    elif command == "*":
         umnojeniye(number,second_number)
 
-    elif str == "-":
+    elif command == "-":
         minus(number,second_number)
 
-    elif str == "+":
+    elif command == "+":
         plus(number,second_number)
 
-    elif str == "^":
+    elif command == "^":
         stepen(number,second_number)
 
-    elif str == "m":
+    elif command == "m":
         module(number)
 
-    elif str == "arccos":
+    elif command == "arccos":
         arccos(number)
 
-    elif str == "!":
+    elif command == "!":
         print("number =")
         number = float(input())
         print(factorial(number))
 
-    elif str == "rand":
+    elif command == "rand":
         random(number,second_number)
 
     else:
