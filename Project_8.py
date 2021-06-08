@@ -1,43 +1,43 @@
-from math_two import m
+from math_two import manipulation
 
 run = True
 print(
     "/ - деление \n* - умножение \n+ - сложение \n- - разность\nm - модуль\narccos - arccos \n^ - возведение в степень \n! - факториал \nrand - рандомное число \nquit - выход")
 
 while (run):
-    str = input()
+    command = input()
 
-    if str == "/":
-        m.de(self=(''))
+    if command == "/":
+        manipulation.division(self=(''))
 
-    elif str == "quit":
+    elif command == "quit":
         run = False
 
-    elif str == "*":
-        m.node(self=(''))
+    elif command == "*":
+        manipulation.multiplication(self=(''))
 
-    elif str == "-":
-        m.nosum(self=(''))
+    elif command == "-":
+        manipulation.subtraction(self=(''))
 
-    elif str == "+":
-        m.sum(self=(''))
+    elif command == "+":
+        manipulation.sum(self=(''))
 
-    elif str == "^":
-        m.s(self=(''))
+    elif command == "^":
+        manipulation.power(self=(''))
 
-    elif str == "m":
-        m.mod(self=(''))
+    elif command == "m":
+        manipulation.mod(self=(''))
 
-    elif str == "arccos":
-        m.acos(self=(''))
+    elif command == "arccos":
+        manipulation.acos(self=(''))
 
-    elif str == "!":
-        print("numb =")
-        numb = float(input())
-        print(m.factorial(numb))
+    elif command == "!":
+        print("number =")
+        number = float(input())
+        print(manipulation.factorial(number))
 
-    elif str == "rand":
-        m.r(self=(''))
+    elif command == "rand":
+        manipulation.rand(self=(''))
 
     else:
-        print("Такой нет команды")
+        print("Команда отсутствует")
