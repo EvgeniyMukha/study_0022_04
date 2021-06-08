@@ -10,62 +10,62 @@ point = True
 print("/ деление \n* умножение \n+ сложение \n- разность\nm модуль\narccos - arccos \n^  возведение в степень \n! факториал \nrand рандомное число \nquit выход")
 
 while(point):
-    str = input()
+    command = input()
 
-    if str == "/":
+    if command == "/":
         print("number =")
         number = float(input())  # float - вещественные числа
         print("second number = ")
         secondnumber = float(input())
         print(number / secondnumber)
 
-    elif str == "quit":
+    elif command == "quit":
         point = False
 
-    elif str == "*":
+    elif command == "*":
         print("number =")
         number = float(input())
         print("second number = ")
         secondnumber = float(input())
         print(number * secondnumber)
 
-    elif str == "-":
+    elif command == "-":
         print("number =")
         number = float(input())
         print("second number = ")
         secondnumber = float(input())
         print(number - secondnumber)
 
-    elif str == "+":
+    elif command == "+":
         print("number =")
         number = float(input())
         print("second number = ")
         secondnumber = float(input())
         print(number + secondnumber)
 
-    elif str == "^":
+    elif command == "^":
         print("number =")
         number = float(input())
         print("second number = ")
         secondnumber = float(input())
         print(number ** secondnumber)
 
-    elif str == "m":
+    elif command == "m":
         print("number =")
         number = float(input())
         print(math.fabs(number))
 
-    elif str == "arccos":
+    elif command == "arccos":
         print("number =")
         number = float(input())
         print(math.acos(number))
 
-    elif str == "!":
+    elif command == "!":
         print("number =")
         number = float(input())
         print(factorial(number))
 
-    elif str == "rand":
+    elif command == "rand":
         print("Рандомное число в диапазона от: ")
         number = int(input())
         print("До :")
